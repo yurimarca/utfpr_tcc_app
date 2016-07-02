@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">myTCC UserApp</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_logout">Deslogar</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_yes">Sim</string>
+    <string name="dialog_no">Não</string>
+
+    <!-- NavigationDrawerFragment.java -->
+    <string name="menu_home">Página Inicial</string>
+    <string name="menu_myaccount">Meus Dados</string>
+    <string name="menu_myticket">Minhas Passagens</string>
+    <string name="menu_newticket">Comprar Passagem</string>
+    <string name="menu_settings">Configurações</string>
+
+    <!-- LoginActivity.java -->
+    <string name="login_error_intro">"Erro: Insira "</string>
+    <string name="login_error_blank_username">o email</string>
+    <string name="login_error_join">" e "</string>
+    <string name="login_error_blank_password">a senha</string>
+    <string name="login_error_end">" corretamente."</string>
+
+    <!-- MainActivity.java -->
+    <string name="main_logout_title">Logout</string>
+    <string name="main_logout_text">Deseja realmente sair da sua conta?</string>
+
+    <!-- NewTicketFragment.java -->
+    <!-- Button-->
+    <string name="newticket_button_tBtnIda">Só Ida</string>
+    <string name="newticket_button_tBtnIdaVolta">Ida e Volta</string>
+    <string name="newticket_button_btnBuscar">Buscar Passagens</string>
+    <!-- EditText-->
+    <string name="newticket_et_etOrigem">Origem</string>
+    <string name="newticket_et_etDestino">Destino</string>
+    <string name="newticket_et_etDataIda">Data de ida</string>
+    <string name="newticket_et_etDataVolta">Data de volta</string>
+    <!-- Dialog-->
+    <string name="newticket_dialog_noTickets_title">Nenhuma passagem encontrada!</string>
+    <string name="newticket_dialog_noTickets_text">Não existem passagens disponíveis para esta data!</string>
+
+
+    <!-- MyAccountFragment.java -->
+    <!-- ListView titles -->
+    <string name="myaccount_list_nome">Nome</string>
+    <string name="myaccount_list_sobrenome">Sobrenome</string>
+    <string name="myaccount_list_email">Email</string>
+    <string name="myaccount_list_data">Data de Nascimento</string>
+    <string name="myaccount_list_phone">Telefone</string>
+    <string name="myaccount_list_cpf">CPF</string>
+
+    <!-- TextView-->
+    <string name="myaccount_text_title">Informações do Usuário</string>
+
+    <!-- MyTicketsFragment.java -->
+    <!-- TextView-->
+    <string name="mytickets_text_title">Passagens</string>
+    <string name="mytickets_text_title_empty">Não há passagens</string>
+
+    <!-- ListView titles-->
+    <string name="mytickets_list_origem">Origem </string>
+    <string name="mytickets_list_destino">Destino </string>
+    <string name="mytickets_list_partida">Partida </string>
+
+
+    <!-- ChooseTicketFragment.java -->
+    <!-- TextView-->
+    <string name="chooseticket_text_title">Escolha sua passagem</string>
+
+    <!-- ListView titles-->
+    <string name="chooseticket_list_partida">Partida </string>
+    <string name="chooseticket_list_chegada">Chegada </string>
+    <string name="chooseticket_list_classe">Classe </string>
+    <string name="chooseticket_list_preco">Preço </string>
+
+    <!-- TicketConfirmationFragment.java-->
+    <!-- TextView-->
+    <string name="ticketconfirmation_text_title">Confirme sua passagem</string>
+    <string name="ticketconfirmation_text_origem">Origem: </string>
+    <string name="ticketconfirmation_text_destino">Destino: </string>
+    <string name="ticketconfirmation_text_partida">Partida: </string>
+    <string name="ticketconfirmation_text_chegada">Chegada: </string>
+    <string name="ticketconfirmation_text_classe">Classe: </string>
+    <string name="ticketconfirmation_text_preco">Preço: </string>
+
+    <!-- Button-->
+    <string name="ticketconfirmation_button_cancelar">Cancelar Passagem </string>
+    <string name="ticketconfirmation_button_comprar">Comprar Passagem </string>
+
+    <!-- TicketFragment.java-->
+    <!-- TextView-->
+    <string name="ticket_text_title">Bilhete da sua Passagem</string>
+
+    <!-- Button-->
+    <string name="ticket_button_cancelar">Cancelar Passagem </string>
+
+
+    <!-- MainOperadorFragment.java-->
+    <!-- Toast-->
+    <string name="mainoperator_text_error">Nenhuma passagem agendada para hoje</string>
+    <!-- Button-->
+    <string name="mainoperator_button_embarque">Iniciar Embarque</string>
+    <string name="mainoperator_button_notificacao">Enviar Notificação</string>
+    <string name="mainoperator_button_listpassagers">Listar Passageiros</string>
+
+    <!-- ListaViagensFragment.java -->
+    <!-- TextView-->
+    <string name="listaviagens_text_title">Selecione a viagem </string>
+
+    <!-- ListView-->
+    <string name="listaviagens_list_codigo">Codigo da Viagem </string>
+    <string name="listaviagens_list_origem">Cidade de Origem </string>
+    <string name="listaviagens_list_destino">Cidade de Destino </string>
+    <string name="listaviagens_list_partida">Data de Partida </string>
+
+
+    <!-- EmbarqueFragment.java-->
+    <!-- Dialog-->
+    <string name="embarque_dialog_title">Embarque Válidado</string>
+    <string name="embarque_dialog_message">Passageiro pode embarcar.</string>
+
+
+
+
+</resources>

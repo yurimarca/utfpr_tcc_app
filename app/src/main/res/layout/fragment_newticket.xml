@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <!--<TextView-->
+            <!--android:id="@+id/fragment_initial_infos_title"-->
+            <!--android:text="Comprar Passagem"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:textColor="@color/myPrimaryColor"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+        <!--<View-->
+        <!--android:layout_height="2dip"-->
+        <!--android:background="@color/myPrimaryColor"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:id="@+id/view1" />-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/tBtnIda"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@color/myAccentColor"
+                android:text="@string/newticket_button_tBtnIda"/>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/tBtnIdaVolta"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@color/myPrimaryColor"
+                android:text="@string/newticket_button_tBtnIdaVolta"/>
+        </LinearLayout>
+
+        <!--<View-->
+            <!--android:layout_height="10dip"-->
+            <!--android:background="@color/abc_primary_text_disable_only_material_dark"-->
+            <!--android:layout_width="wrap_content" />-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/myWindowBackground">
+
+        <AutoCompleteTextView
+            android:id="@+id/etOrigem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:hint="@string/newticket_et_etOrigem"
+            android:textColor="@color/myTextPrimaryColor"
+            android:textColorHint="@color/myAccentColor"
+            android:drawableLeft="@mipmap/icon_right"
+            android:fontFamily="sans-serif"
+            android:inputType="textAutoComplete"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/etDestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:hint="@string/newticket_et_etDestino"
+            android:textColor="@color/myTextPrimaryColor"
+            android:textColorHint="@color/myAccentColor"
+            android:drawableLeft="@mipmap/icon_left"
+            android:fontFamily="sans-serif"
+            android:inputType="textAutoComplete"/>
+
+            <!--<View-->
+                <!--android:layout_height="10dip"-->
+                <!--android:background="@color/abc_primary_text_disable_only_material_dark"-->
+                <!--android:layout_width="wrap_content" />-->
+
+            <EditText
+                android:id="@+id/etDataIda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:hint="@string/newticket_et_etDataIda"
+                android:textColor="@color/myTextPrimaryColor"
+                android:textColorHint="@color/myAccentColor"
+                android:drawableLeft="@mipmap/icon_calendar"
+                android:fontFamily="sans-serif"
+                android:inputType="date"/>
+
+            <EditText
+                android:id="@+id/etDataVolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:hint="@string/newticket_et_etDataVolta"
+                android:textColor="@color/myTextPrimaryColor"
+                android:textColorHint="@color/myAccentColor"
+                android:drawableLeft="@mipmap/icon_calendar"
+                android:fontFamily="sans-serif"
+                android:inputType="date"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btnBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/myPrimaryColor"
+                android:text="@string/newticket_button_btnBuscar"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

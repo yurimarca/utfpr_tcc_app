@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip" >
+
+    <ImageView
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:id="@+id/imgViewLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:scaleType="center">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/listaviagens_list_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgViewLogo"
+        android:layout_alignParentTop="true"
+        android:text="@string/listaviagens_list_codigo"
+        android:textSize="15dp"
+        android:textColor="@color/myTextPrimaryColor"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/listaviagens_list_origem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listaviagens_list_codigo"
+        android:layout_below="@+id/listaviagens_list_codigo"
+        android:text="@string/listaviagens_list_origem"
+        android:textSize="15dp"
+        android:textColor="@color/myTextPrimaryColor"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/listaviagens_list_destino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listaviagens_list_origem"
+        android:layout_below="@+id/listaviagens_list_origem"
+        android:text="@string/listaviagens_list_destino"
+        android:textSize="15dp"
+        android:textColor="@color/myTextPrimaryColor"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/listaviagens_list_partida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listaviagens_list_destino"
+        android:layout_below="@+id/listaviagens_list_destino"
+        android:text="@string/listaviagens_list_partida"
+        android:textSize="15dp"
+        android:textColor="@color/myTextPrimaryColor"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/listItemCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/listaviagens_list_codigo"
+        android:layout_alignBottom="@+id/listaviagens_list_codigo"
+        android:layout_toRightOf="@+id/listaviagens_list_codigo"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/myPrimaryColor"/>
+
+    <TextView
+        android:id="@+id/listItemOrigem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/listaviagens_list_origem"
+        android:layout_alignBottom="@+id/listaviagens_list_origem"
+        android:layout_toRightOf="@+id/listaviagens_list_codigo"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/myPrimaryColor"/>
+
+    <TextView
+        android:id="@+id/listItemDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/listaviagens_list_destino"
+        android:layout_alignBottom="@+id/listaviagens_list_destino"
+        android:layout_toRightOf="@+id/listaviagens_list_codigo"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/myPrimaryColor"/>
+
+    <TextView
+        android:id="@+id/listItemPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/listaviagens_list_partida"
+        android:layout_alignBottom="@+id/listaviagens_list_partida"
+        android:layout_toRightOf="@+id/listaviagens_list_codigo"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/myPrimaryColor"/>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+
+    <color name="myPrimaryColor">#3F51B5</color>
+    <color name="myPrimaryDarkColor">#303F9F</color>
+    <color name="myAccentColor">#607D8B</color>
+    <color name="myDrawerBackground">#FFF</color>
+    <color name="myWindowBackground">#FFFFFF</color>
+    <color name="myTextPrimaryColor">#212121</color>
+    <color name="myTextSecondaryColor">#727272</color>
+    <color name="myNavigationColor">#000000</color>
+
+    <color name="selected_gray">#ffdbdbdb</color>
+
+    <color name="myTextPrimaryColorLight">#ffffff</color>
+    <color name="myTextSecondaryColorLight">#e2e2e2</color>
+</resources>
