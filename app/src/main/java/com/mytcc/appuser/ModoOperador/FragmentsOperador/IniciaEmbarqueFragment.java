@@ -6,11 +6,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.mytcc.appuser.R;
 
 public class IniciaEmbarqueFragment extends Fragment {
     public static final String TAG = "IniciaEmbarqueFragment";
+
+    private TextView tvData, tvTitle;
 
     public IniciaEmbarqueFragment() {
         Log.d(TAG, "IniciaEmbarqueFragment()");

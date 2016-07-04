@@ -52,13 +52,28 @@ public class ListaViagensFragment extends Fragment {
                     viagensOperador, R.layout.list_item_listaviagens);
             listView.setAdapter(adapter);
 
-            switchModoFuncionamento();
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Activity act = getActivity();
+                    if (act instanceof MainOperadorActivity) {
+                        ((MainOperadorActivity) act).setViagemOperador(viagensOperador.get(position));
+                        ((MainOperadorActivity) act).listaPassageirosDaViagem();
+                        try {
+                            Thread.sleep(2000);
+                        } catch (Exception ex) {
+                            Log.e(TAG, "Erro sleep");
+                        }
+                        ((MainOperadorActivity) act).switchFragments(IniciaEmbarqueFragment.TAG);
+                    }
+                }
+            });
         }
 
         return rootView;
     }
 
-    private void switchModoFuncionamento() {
+    /*private void switchModoFuncionamento() {
         Activity act = getActivity();
         switch (((MainOperadorActivity) act).getModoFuncionamento()) {
             case MainOperadorActivity.MODO_REALIZAR_EMBARQUE:
@@ -72,7 +87,7 @@ public class ListaViagensFragment extends Fragment {
                             try {
                                 Thread.sleep(2000);
                             } catch (Exception ex) {
-                                Log.e(TAG, "Erro slepp");
+                                Log.e(TAG, "Erro sleep");
                             }
                             ((MainOperadorActivity) act).switchFragments(EmbarqueFragment.TAG);
                         }
@@ -158,5 +173,5 @@ public class ListaViagensFragment extends Fragment {
                 }
             }
         });
-    }
+    }*/
 }
