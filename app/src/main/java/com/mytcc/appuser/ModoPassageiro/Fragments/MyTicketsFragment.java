@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.mytcc.appuser.ModoPassageiro.MainActivity;
+import com.mytcc.appuser.ModoPassageiro.MainPassageioActivity;
 import com.mytcc.appuser.ModoPassageiro.ListViewAdapter.MyTicketsAdapter;
 import com.mytcc.appuser.MyApplication;
 import com.mytcc.appuser.R;
@@ -52,9 +52,9 @@ public class MyTicketsFragment extends Fragment {
                     //Todo: DialogBox to change User Data
 
                     Activity act = getActivity();
-                    if (act instanceof MainActivity) {
-                        ((MainActivity) act).setNewTicketViagem(myApp.getMyUser().getTickets().get(position));
-                        ((MainActivity) act).switchFragments(TicketFragment.TAG);
+                    if (act instanceof MainPassageioActivity) {
+                        ((MainPassageioActivity) act).setNewTicketViagem(myApp.getMyUser().getTickets().get(position));
+                        ((MainPassageioActivity) act).switchFragments(TicketFragment.TAG);
                     }
                 }
             });

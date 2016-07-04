@@ -1,8 +1,7 @@
-package com.mytcc.appuser.ModoOperador.Fragments;
+package com.mytcc.appuser.ModoOperador.FragmentsOperador;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,20 +11,15 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.gc.materialdesign.widgets.Dialog;
-import com.mytcc.appuser.Activities.LoginActivity;
-import com.mytcc.appuser.ModoOperador.Fragments.EmbarqueFragment;
 import com.mytcc.appuser.ModoOperador.ListViewAdapter.ListaViagensAdapter;
 import com.mytcc.appuser.ModoOperador.MainOperadorActivity;
 import com.mytcc.appuser.ModoOperador.Viagem;
-import com.mytcc.appuser.MyApplication;
 import com.mytcc.appuser.R;
 import com.parse.FunctionCallback;
 import com.parse.ParseCloud;
 import com.parse.ParseException;
-import com.parse.ParseObject;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 

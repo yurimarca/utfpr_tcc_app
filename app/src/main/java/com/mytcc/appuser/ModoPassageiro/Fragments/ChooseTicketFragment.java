@@ -2,7 +2,6 @@ package com.mytcc.appuser.ModoPassageiro.Fragments;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,8 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gc.materialdesign.widgets.Dialog;
-import com.mytcc.appuser.Activities.LoginActivity;
-import com.mytcc.appuser.ModoPassageiro.MainActivity;
+import com.mytcc.appuser.ModoPassageiro.MainPassageioActivity;
 import com.mytcc.appuser.ModoPassageiro.ListViewAdapter.ChooseTicketAdapter;
 import com.mytcc.appuser.R;
 import com.parse.FunctionCallback;
@@ -57,8 +55,8 @@ public class ChooseTicketFragment extends Fragment {
         listView = (ListView)rootView.findViewById(R.id.listView_chooseticket);
 
         Activity act = getActivity();
-        if (act instanceof MainActivity) {
-            newTicketsFound = ((MainActivity) act).getNewTicketsFound();
+        if (act instanceof MainPassageioActivity) {
+            newTicketsFound = ((MainPassageioActivity) act).getNewTicketsFound();
 
             df = new SimpleDateFormat("dd/MM/yyyy");
 
@@ -86,7 +84,7 @@ public class ChooseTicketFragment extends Fragment {
                         @Override
                         public void onClick(View v) {
                              Activity act = getActivity();
-                            ((MainActivity) act).switchFragments(MainFragment.TAG);
+                            ((MainPassageioActivity) act).switchFragments(MainFragment.TAG);
                         }
                     });
                     d.create();
@@ -106,8 +104,8 @@ public class ChooseTicketFragment extends Fragment {
                     param.put("idViagem", newTicketsFound.get(position).getObjectId());
 
                     Activity act = getActivity();
-                    if (act instanceof MainActivity)
-                        ((MainActivity) act).setNewTicket(newTicketsFound.get(position));
+                    if (act instanceof MainPassageioActivity)
+                        ((MainPassageioActivity) act).setNewTicket(newTicketsFound.get(position));
 
                     ParseCloud.callFunctionInBackground("listaPoltronas", param, new FunctionCallback<ArrayList<String>>() {
                         @Override
@@ -115,9 +113,9 @@ public class ChooseTicketFragment extends Fragment {
                             if (e == null) {
                                 if (objs != null) {
                                     Activity act = getActivity();
-                                    if (act instanceof MainActivity) {
-                                        ((MainActivity) act).setListPoltronas(objs);
-                                        ((MainActivity) act).switchFragments(TicketConfirmationFragment.TAG);
+                                    if (act instanceof MainPassageioActivity) {
+                                        ((MainPassageioActivity) act).setListPoltronas(objs);
+                                        ((MainPassageioActivity) act).switchFragments(TicketConfirmationFragment.TAG);
                                     }
                                 }
                             } else {

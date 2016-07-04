@@ -1,4 +1,4 @@
-package com.mytcc.appuser.ModoOperador.Fragments;
+package com.mytcc.appuser.ModoOperador.FragmentsOperador;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -12,7 +12,6 @@ import android.widget.ListView;
 
 import com.gc.materialdesign.widgets.Dialog;
 import com.mytcc.appuser.ModoOperador.MainOperadorActivity;
-import com.mytcc.appuser.ModoOperador.PassageiroSimples;
 import com.mytcc.appuser.R;
 
 import java.util.ArrayList;

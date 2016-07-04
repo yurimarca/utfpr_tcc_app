@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.mytcc.appuser.ConnectionDetector;
 import com.mytcc.appuser.ModoOperador.MainOperadorActivity;
-import com.mytcc.appuser.ModoPassageiro.MainActivity;
+import com.mytcc.appuser.ModoPassageiro.MainPassageioActivity;
 import com.mytcc.appuser.MyApplication;
 import com.mytcc.appuser.ModoPassageiro.Passageiro;
 import com.mytcc.appuser.R;
@@ -49,7 +49,7 @@ public class LoginActivity extends Activity {
         finish();*/
 
         if(myApp.isLoggedIn()) {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MainPassageioActivity.class);
             startActivity(intent);
             finish();
         }
@@ -110,7 +110,7 @@ public class LoginActivity extends Activity {
                                             myApp.setLoggedIn(true);
                                             myApp.listaPassagensDoPassageiro();
 
-                                            Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                                            Intent i = new Intent(LoginActivity.this, MainPassageioActivity.class);
                                             startActivity(i);
                                             finish();
                                         }

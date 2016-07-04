@@ -8,48 +8,37 @@
         android:layout_height="match_parent"
         android:padding="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Text"
-        android:id="@+id/textView"
-        android:layout_gravity="center_horizontal"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <com.gc.materialdesign.views.ButtonRectangle
+        <com.gc.materialdesign.views.ButtonRectangle
         android:id="@+id/btnEmbarque"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_weight="1"
         android:background="@color/myPrimaryColor"
         android:text="@string/mainoperator_button_embarque"
-        android:layout_above="@+id/btnListPassagers"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+            android:layout_above="@+id/btnBagagem"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp" />
 
-    <com.gc.materialdesign.views.ButtonRectangle
-        android:id="@+id/btnListPassagers"
+        <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/btnBagagem"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_weight="1"
         android:background="@color/myPrimaryColor"
-        android:text="@string/mainoperator_button_listpassagers"
-        android:layout_above="@+id/btnNotification"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="@string/mainoperator_button_bagagem"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
-    <com.gc.materialdesign.views.ButtonRectangle
-        android:id="@+id/btnNotification"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_weight="1"
-        android:background="@color/myPrimaryColor"
-        android:text="@string/mainoperator_button_notificacao"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Texto"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 </LinearLayout>

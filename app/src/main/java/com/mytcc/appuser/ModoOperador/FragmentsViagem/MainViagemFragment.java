@@ -1,4 +1,4 @@
-package com.mytcc.appuser.ModoOperador.Fragments;
+package com.mytcc.appuser.ModoOperador.FragmentsViagem;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -9,17 +9,17 @@ import android.view.ViewGroup;
 
 import com.mytcc.appuser.R;
 
-public class FinalizaEmbarqueFragment extends Fragment {
-    public static final String TAG = "FinalizaEmbarFragment";
+public class MainViagemFragment extends Fragment {
+    public static final String TAG = "MainViagemFragment";
 
-    public FinalizaEmbarqueFragment() {
-        Log.d(TAG, "FinalizaEmbarqueFragment()");
+    public MainViagemFragment() {
+        Log.d(TAG, "MainViagemFragment()");
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.d(TAG, "FinalizaEmbarqueFragment.onCreateView()");
+        Log.d(TAG, "MainViagemFragment.onCreateView()");
         View rootView = inflater.inflate(R.layout.statsfragment, container, false);
 
         return rootView;

@@ -7,6 +7,7 @@
     <string name="dialog_ok">OK</string>
     <string name="dialog_yes">Sim</string>
     <string name="dialog_no">Não</string>
+    <string name="dialog_cancel">Cancelar</string>
 
     <!-- NavigationDrawerFragment.java -->
     <string name="menu_home">Página Inicial</string>
@@ -22,7 +23,7 @@
     <string name="login_error_blank_password">a senha</string>
     <string name="login_error_end">" corretamente."</string>
 
-    <!-- MainActivity.java -->
+    <!-- MainPassageioActivity.java -->
     <string name="main_logout_title">Logout</string>
     <string name="main_logout_text">Deseja realmente sair da sua conta?</string>
 
@@ -101,8 +102,7 @@
     <string name="mainoperator_text_error">Nenhuma passagem agendada para hoje</string>
     <!-- Button-->
     <string name="mainoperator_button_embarque">Iniciar Embarque</string>
-    <string name="mainoperator_button_notificacao">Enviar Notificação</string>
-    <string name="mainoperator_button_listpassagers">Listar Passageiros</string>
+    <string name="mainoperator_button_bagagem">Despachar Bagagem</string>
 
     <!-- ListaViagensFragment.java -->
     <!-- TextView-->
@@ -120,7 +120,27 @@
     <string name="embarque_dialog_title">Embarque Válidado</string>
     <string name="embarque_dialog_message">Passageiro pode embarcar.</string>
 
+    <!-- CadastroEtiquetaFragment.java-->
+    <!-- Dialog-->
+    <string name="cadastroetiqueta_dialog_title_codigoCapturado">Passagem Capturada</string>
+    <string name="cadastroetiqueta_dialog_text_codigoCapturado">Escolha a opção para Cadastrar uma Etiqueta ou Recuperar Etiquetas para esta passagem.</string>
+
+    <string name="cadastroetiqueta_dialog_title_cadastrar">Capturar Etiqueta</string>
+    <string name="cadastroetiqueta_dialog_text_cadastrar">Agora capture o código da etiqueta.</string>
+
+    <string name="cadastroetiqueta_dialog_title_etiquetacapturada">Etiqueta Capturada</string>
+    <string name="cadastroetiqueta_dialog_text_etiquetacapturada">Anexar mais uma etiqueta?</string>
+
+    <string name="cadastroetiqueta_dialog_title_invalid">Código Inválido</string>
+    <string name="cadastroetiqueta_dialog_text_invalid">Passagem Inválida! Tente novamente.</string>
+
+    <string name="cadastroetiqueta_dialog_title_etiquetas">Etiquetas</string>
 
 
+    <!-- TextView-->
+    <string name="cadastroetiqueta_inserir_codigo">Capturar Código da Passagem</string>
+    <!-- Button-->
+    <string name="cadastroetiqueta_cadastrar">Cadastrar Etiqueta</string>
+    <string name="cadastroetiqueta_recuperar">Recuperar Etiquetas</string>
 
 </resources>

@@ -3,7 +3,6 @@ package com.mytcc.appuser.ModoPassageiro.Fragments;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,8 +16,7 @@ import android.widget.Toast;
 
 import com.gc.materialdesign.views.ButtonRectangle;
 import com.gc.materialdesign.widgets.Dialog;
-import com.mytcc.appuser.Activities.LoginActivity;
-import com.mytcc.appuser.ModoPassageiro.MainActivity;
+import com.mytcc.appuser.ModoPassageiro.MainPassageioActivity;
 import com.mytcc.appuser.R;
 import com.parse.FunctionCallback;
 import com.parse.ParseCloud;
@@ -135,9 +133,9 @@ public class NewTicketFragment extends Fragment {
                                 if (objs != null) {
                                     if (objs.size() != 0) {
                                         Activity act = getActivity();
-                                        if (act instanceof MainActivity) {
-                                            ((MainActivity) act).pushNewTicketsFound(objs);
-                                            ((MainActivity) act).switchFragments(ChooseTicketFragment.TAG);
+                                        if (act instanceof MainPassageioActivity) {
+                                            ((MainPassageioActivity) act).pushNewTicketsFound(objs);
+                                            ((MainPassageioActivity) act).switchFragments(ChooseTicketFragment.TAG);
                                         }
                                     } else {
                                         Dialog d = new Dialog(getActivity(),

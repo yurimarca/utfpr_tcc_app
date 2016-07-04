@@ -1,6 +1,5 @@
 package com.mytcc.appuser.ModoOperador;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -11,17 +10,17 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.gc.materialdesign.widgets.Dialog;
 import com.gc.materialdesign.widgets.ProgressDialog;
 import com.mytcc.appuser.Activities.LoginActivity;
-import com.mytcc.appuser.ModoOperador.Fragments.EmbarqueFragment;
-import com.mytcc.appuser.ModoOperador.Fragments.FinalizaEmbarqueFragment;
-import com.mytcc.appuser.ModoOperador.Fragments.ListaPassageirosEmbarcadosFragment;
-import com.mytcc.appuser.ModoOperador.Fragments.ListaPassageirosFragment;
-import com.mytcc.appuser.ModoOperador.Fragments.ListaViagensFragment;
-import com.mytcc.appuser.ModoOperador.Fragments.MainOperadorFragment;
+import com.mytcc.appuser.ModoOperador.FragmentsOperador.CadastroEtiquetaFragment;
+import com.mytcc.appuser.ModoOperador.FragmentsOperador.EmbarqueFragment;
+import com.mytcc.appuser.ModoOperador.FragmentsOperador.FinalizaEmbarqueFragment;
+import com.mytcc.appuser.ModoOperador.FragmentsOperador.ListaPassageirosEmbarcadosFragment;
+import com.mytcc.appuser.ModoOperador.FragmentsOperador.ListaPassageirosFragment;
+import com.mytcc.appuser.ModoOperador.FragmentsOperador.ListaViagensFragment;
+import com.mytcc.appuser.ModoOperador.FragmentsOperador.MainOperadorFragment;
 import com.mytcc.appuser.MyApplication;
 import com.mytcc.appuser.R;
 import com.parse.FunctionCallback;
@@ -133,6 +132,9 @@ public class MainOperadorActivity extends ActionBarActivity {
                     break;
                 case ListaPassageirosEmbarcadosFragment.TAG:
                     fragment = new ListaPassageirosEmbarcadosFragment();
+                    break;
+                case CadastroEtiquetaFragment.TAG:
+                    fragment = new CadastroEtiquetaFragment();
                     break;
             }
         }

@@ -1,4 +1,4 @@
-package com.mytcc.appuser.ModoOperador.Fragments;
+package com.mytcc.appuser.ModoOperador.FragmentsOperador;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -12,11 +12,8 @@ import android.widget.Toast;
 
 import com.gc.materialdesign.views.ButtonRectangle;
 import com.mytcc.appuser.ModoOperador.MainOperadorActivity;
-import com.mytcc.appuser.ModoOperador.Viagem;
 import com.mytcc.appuser.MyApplication;
 import com.mytcc.appuser.R;
-
-import java.util.ArrayList;
 
 public class MainOperadorFragment extends Fragment {
     public static final String TAG = "MainOperadorFragment";
@@ -24,7 +21,7 @@ public class MainOperadorFragment extends Fragment {
     private MyApplication myApp;
 
     private TextView textView;
-    private ButtonRectangle btnEmbarque, btnList, btnNotification;
+    private ButtonRectangle btnEmbarque, btnBagagem;
 
     public MainOperadorFragment() {
         Log.d(TAG, "MainOperadorFragment()");
@@ -38,14 +35,13 @@ public class MainOperadorFragment extends Fragment {
 
         textView = (TextView)rootView.findViewById(R.id.textView);
         btnEmbarque = (ButtonRectangle) rootView.findViewById(R.id.btnEmbarque);
-        btnList = (ButtonRectangle) rootView.findViewById(R.id.btnListPassagers);
-        btnNotification = (ButtonRectangle) rootView.findViewById(R.id.btnNotification);
+        btnBagagem = (ButtonRectangle) rootView.findViewById(R.id.btnBagagem);
 
         final Activity act = getActivity();
         if (act instanceof MainOperadorActivity) {
             String NomeOperador = ((MainOperadorActivity) act).getNomeOperador();
 
-            textView.setText("Olá Sr." + NomeOperador + ", Bem-vindo!");
+            textView.setText("Olá Sr(a)." + NomeOperador + ", Bem-vindo!");
 
             btnEmbarque.setOnClickListener(
                     new View.OnClickListener() {
@@ -61,7 +57,16 @@ public class MainOperadorFragment extends Fragment {
                     }
             );
 
-            btnNotification.setOnClickListener(new View.OnClickListener() {
+            btnBagagem.setOnClickListener(
+                    new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            ((MainOperadorActivity) act).switchFragments(CadastroEtiquetaFragment.TAG);
+                        }
+                    }
+            );
+
+            /*btnNotification.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     if (((MainOperadorActivity) act).checkViagens()) {
@@ -83,7 +88,7 @@ public class MainOperadorFragment extends Fragment {
                         Toast.makeText(act.getApplicationContext(), getString(R.string.mainoperator_text_error), Toast.LENGTH_LONG).show();
                     }
                 }
-            });
+            });*/
 
         }
 

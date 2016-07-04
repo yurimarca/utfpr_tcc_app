@@ -12,7 +12,7 @@ import com.gc.materialdesign.views.ButtonRectangle;
 import com.gc.materialdesign.widgets.ProgressDialog;
 
 import com.mytcc.appuser.ConnectionDetector;
-import com.mytcc.appuser.ModoPassageiro.MainActivity;
+import com.mytcc.appuser.ModoPassageiro.MainPassageioActivity;
 import com.mytcc.appuser.MyApplication;
 import com.mytcc.appuser.ModoPassageiro.Passageiro;
 import com.mytcc.appuser.R;
@@ -85,7 +85,7 @@ public class CadastroActivity extends Activity {
                                     myApp.setMyUser(newUser);
                                     myApp.setLoggedIn(true);
 
-                                    Intent intent = new Intent(CadastroActivity.this, MainActivity.class);
+                                    Intent intent = new Intent(CadastroActivity.this, MainPassageioActivity.class);
                                     startActivity(intent);
                                     finish();
                                 }

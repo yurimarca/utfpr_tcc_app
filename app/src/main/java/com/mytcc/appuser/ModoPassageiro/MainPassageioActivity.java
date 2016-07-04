@@ -11,7 +11,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.gc.materialdesign.views.ButtonFlat;
 import com.gc.materialdesign.widgets.Dialog;
 import com.mytcc.appuser.Activities.LoginActivity;
 import com.mytcc.appuser.ModoPassageiro.Fragments.ChooseTicketFragment;
@@ -33,10 +32,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-public class MainActivity extends ActionBarActivity
+public class MainPassageioActivity extends ActionBarActivity
         implements NavigationDrawerCallbacks {
 
-    public static final String TAG = "MainActivity" ;
+    public static final String TAG = "MainPassageioActivity" ;
 
     //Fragment managing the behaviors, interactions and presentation of the navigation drawer.
     private NavigationDrawerFragment mNavigationDrawerFragment;
@@ -53,11 +52,11 @@ public class MainActivity extends ActionBarActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.d(TAG, "MainActivity.onCreate()");
+        Log.d(TAG, "MainPassageioActivity.onCreate()");
 
         myApp = (MyApplication)getApplication();
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_mainpassageiro);
         mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
         setSupportActionBar(mToolbar);
 
@@ -126,7 +125,7 @@ public class MainActivity extends ActionBarActivity
                     myApp.setLoggedIn(false);
                     myApp.deleteMyUser();
 
-                    Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                    Intent i = new Intent(MainPassageioActivity.this, LoginActivity.class);
                     startActivity(i);
                     finish();
                 }

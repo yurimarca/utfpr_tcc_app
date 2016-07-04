@@ -12,8 +12,7 @@ import android.widget.Toast;
 
 import com.gc.materialdesign.views.ButtonFlat;
 import com.gc.materialdesign.views.ButtonRectangle;
-import com.gc.materialdesign.widgets.Dialog;
-import com.mytcc.appuser.ModoPassageiro.MainActivity;
+import com.mytcc.appuser.ModoPassageiro.MainPassageioActivity;
 import com.mytcc.appuser.MyApplication;
 import com.mytcc.appuser.ModoPassageiro.Passagem;
 import com.mytcc.appuser.R;
@@ -66,8 +65,8 @@ public class TicketConfirmationFragment extends Fragment {
         final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
         Activity act = getActivity();
-        if (act instanceof MainActivity) {
-            newTicket = ((MainActivity) act).getNewTicket();
+        if (act instanceof MainPassageioActivity) {
+            newTicket = ((MainPassageioActivity) act).getNewTicket();
             textViewOrigem.setText(newTicket.get("Origem").toString());
             textViewDestino.setText(newTicket.get("Destino").toString());
             textViewPartida.setText(df.format(newTicket.get("Partida")));
@@ -101,9 +100,9 @@ public class TicketConfirmationFragment extends Fragment {
                                 myApp.addTicketToUser(ticket);
 
                                 Activity act = getActivity();
-                                if (act instanceof MainActivity) {
-                                    ((MainActivity) act).setNewTicketViagem(ticket);
-                                    ((MainActivity) act).switchFragments(TicketFragment.TAG);
+                                if (act instanceof MainPassageioActivity) {
+                                    ((MainPassageioActivity) act).setNewTicketViagem(ticket);
+                                    ((MainPassageioActivity) act).switchFragments(TicketFragment.TAG);
                                 }
                             } else {
                                 Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
@@ -118,9 +117,9 @@ public class TicketConfirmationFragment extends Fragment {
                     @Override
                     public void onClick(View v) {
                         Activity act = getActivity();
-                        if (act instanceof MainActivity) {
-                            ((MainActivity) act).clearNewTicketsFound();
-                            ((MainActivity) act).switchFragments(NewTicketFragment.TAG);
+                        if (act instanceof MainPassageioActivity) {
+                            ((MainPassageioActivity) act).clearNewTicketsFound();
+                            ((MainPassageioActivity) act).switchFragments(NewTicketFragment.TAG);
                         }
                     }
                 });
