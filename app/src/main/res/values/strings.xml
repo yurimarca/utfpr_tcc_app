@@ -14,7 +14,7 @@
     <string name="menu_myaccount">Meus Dados</string>
     <string name="menu_myticket">Minhas Passagens</string>
     <string name="menu_newticket">Comprar Passagem</string>
-    <string name="menu_settings">Configurações</string>
+    <string name="menu_registro">Registro Ocorrência</string>
 
     <!-- LoginActivity.java -->
     <string name="login_error_intro">"Erro: Insira "</string>
@@ -142,5 +142,13 @@
     <!-- Button-->
     <string name="cadastroetiqueta_cadastrar">Cadastrar Etiqueta</string>
     <string name="cadastroetiqueta_recuperar">Recuperar Etiquetas</string>
+
+    <!-- RegistroOcorrenciaFragment.java-->
+    <string name="registroocorrencia_textview_title">Registro de Ocorrência</string>
+    <string name="registroocorrencia_button_enviar">Enviar Registro</string>
+
+    <!-- RegistroPercursoFragment.java-->
+    <string name="registropercurso_textview_title">Registro de Percurso</string>
+
 
 </resources>

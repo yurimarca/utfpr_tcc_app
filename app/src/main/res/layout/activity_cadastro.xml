@@ -93,7 +93,6 @@
             android:hint="Número de Telefone"
             android:textColor="@color/myTextPrimaryColor"
             android:textColorHint="@color/myAccentColor"
-            android:password="true"
             android:drawableLeft="@mipmap/icon_phone"
             android:fontFamily="sans-serif"
             android:inputType="phone"/>
@@ -106,10 +105,10 @@
             android:hint="CPF"
             android:textColor="@color/myTextPrimaryColor"
             android:textColorHint="@color/myAccentColor"
-            android:password="true"
             android:drawableLeft="@mipmap/icon_key"
             android:fontFamily="sans-serif"
             android:inputType="number"/>
+
         <com.gc.materialdesign.views.ButtonRectangle
             android:id="@+id/btnCadastro"
             android:layout_width="match_parent"

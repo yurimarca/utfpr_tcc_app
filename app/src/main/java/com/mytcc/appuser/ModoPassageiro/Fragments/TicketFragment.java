@@ -33,7 +33,7 @@ import java.util.Map;
 public class TicketFragment extends Fragment {
     public static final String TAG = "TicketFragment";
 
-    private TextView textViewOrigem,textViewDestino,textViewPartida;
+    private TextView textViewOrigem,textViewDestino,textViewPartida, tvTicket;
 
     private ButtonFlat btnCancelar;
 
@@ -57,6 +57,8 @@ public class TicketFragment extends Fragment {
         textViewDestino = (TextView) rootView.findViewById(R.id.textViewDestino);
         textViewPartida = (TextView) rootView.findViewById(R.id.textViewPartida);
 
+        tvTicket = (TextView) rootView.findViewById(R.id.tvTicket);
+
         btnCancelar = (ButtonFlat) rootView.findViewById(R.id.btnCancelar);
 
         myApp = (MyApplication)getActivity().getApplication();
@@ -67,6 +69,8 @@ public class TicketFragment extends Fragment {
             textViewOrigem.setText(newTicket.getOrigem());
             textViewDestino.setText(newTicket.getDestino());
             textViewPartida.setText(newTicket.getPartidaString(new SimpleDateFormat("MM/dd/yyyy HH:mm")));
+
+            tvTicket.setText(newTicket.getPassagemId());
 
             imgQRCode = (ImageView) rootView.findViewById(R.id.imageView_barcode);
             generateBarcode(newTicket.getPassagemId());

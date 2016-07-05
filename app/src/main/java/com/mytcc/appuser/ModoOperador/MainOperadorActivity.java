@@ -17,6 +17,7 @@ import com.mytcc.appuser.Activities.LoginActivity;
 import com.mytcc.appuser.ModoOperador.FragmentsOperador.CadastroEtiquetaFragment;
 import com.mytcc.appuser.ModoOperador.FragmentsOperador.EmbarqueFragment;
 import com.mytcc.appuser.ModoOperador.FragmentsOperador.FinalizaEmbarqueFragment;
+import com.mytcc.appuser.ModoOperador.FragmentsOperador.IniciaEmbarqueFragment;
 import com.mytcc.appuser.ModoOperador.FragmentsOperador.ListaPassageirosEmbarcadosFragment;
 import com.mytcc.appuser.ModoOperador.FragmentsOperador.ListaPassageirosFragment;
 import com.mytcc.appuser.ModoOperador.FragmentsOperador.ListaViagensFragment;
@@ -136,6 +137,9 @@ public class MainOperadorActivity extends ActionBarActivity {
                 case CadastroEtiquetaFragment.TAG:
                     fragment = new CadastroEtiquetaFragment();
                     break;
+                case IniciaEmbarqueFragment.TAG:
+                    fragment = new IniciaEmbarqueFragment();
+                    break;
             }
         }
         getFragmentManager().beginTransaction().replace(R.id.container, fragment, tag).commit();
@@ -167,6 +171,13 @@ public class MainOperadorActivity extends ActionBarActivity {
                 }
             }
         });
+    }
+
+    public void IniciaViagem() {
+        Intent i = new Intent(MainOperadorActivity.this, ViagemActivity.class);
+        myApp.setMyViagem(viagemOperador);
+        startActivity(i);
+        finish();
     }
 
     public void listaPassageirosDaViagem() {

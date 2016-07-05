@@ -58,6 +58,16 @@
         android:layout_marginTop="10dp"/>
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ticketconfirmation_text_destino"
+            android:layout_below="@+id/ticketconfirmation_text_destino"
+            android:text="@string/ticketconfirmation_text_partida"
+            android:textSize="20dp"
+            android:textColor="@color/myTextPrimaryColor"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
             android:id="@+id/textViewOrigem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,9 +109,18 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Código"
+            android:id="@+id/tvTicket" />
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_below="@+id/tvTicket"
             android:id="@+id/imageView_barcode"
             android:layout_centerHorizontal="true"/>
 

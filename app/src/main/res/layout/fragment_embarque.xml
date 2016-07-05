@@ -52,6 +52,4 @@
         android:background="@color/myPrimaryColor"
         android:text="Finalizar Embarque"/>
 
-
-
 </LinearLayout>

@@ -20,7 +20,7 @@ public class RegistroPercursoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Log.d(TAG, "RegistroPercursoFrag.onCreateView()");
-        View rootView = inflater.inflate(R.layout.statsfragment, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_registropercurso, container, false);
 
         return rootView;
     }

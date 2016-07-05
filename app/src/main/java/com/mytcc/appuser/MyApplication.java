@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import com.mytcc.appuser.ModoOperador.Viagem;
 import com.mytcc.appuser.ModoPassageiro.Passageiro;
 import com.mytcc.appuser.ModoPassageiro.Passagem;
 import com.parse.FunctionCallback;
@@ -35,6 +36,8 @@ public class MyApplication extends Application {
 
     private boolean loggedIn;
     private Passageiro myUser;
+
+    private Viagem myViagem;
 
     @Override
     public void onCreate() {
@@ -235,5 +238,13 @@ public class MyApplication extends Application {
                 }
             }
         });
+    }
+
+    public Viagem getMyViagem() {
+        return myViagem;
+    }
+
+    public void setMyViagem(Viagem myViagem) {
+        this.myViagem = myViagem;
     }
 }

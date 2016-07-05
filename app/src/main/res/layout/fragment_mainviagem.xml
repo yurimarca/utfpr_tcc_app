@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context=".IniciaEmbarqueFragment">
+    tools:context=".MainViagemFragment">
 
 
     <TextView
@@ -53,36 +53,27 @@
         android:layout_height="2dp"
         android:background="@color/myPrimaryColor" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etPlaca"
-        android:layout_gravity="center_horizontal"
-        android:hint="Placa do Veículo"
-        android:textColor="@color/myTextPrimaryColor"
-        android:textColorHint="@color/myAccentColor"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etCNPJ"
-        android:layout_gravity="center_horizontal"
-        android:hint="CNPJ da Empresa"
-        android:textColor="@color/myTextPrimaryColor"
-        android:textColorHint="@color/myAccentColor"/>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal">
 
         <com.gc.materialdesign.views.ButtonRectangle
-            android:id="@+id/btnIniciarEmbarque"
+            android:id="@+id/btnFinalizar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:background="@color/myPrimaryColor"
-            android:text="Iniciar Embarque"
+            android:text="Finalizar Viagem"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/btnRegistroPercurso" />
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/btnRegistroPercurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/myPrimaryColor"
+            android:text="Registrar Percurso"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />

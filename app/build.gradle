@@ -34,4 +34,5 @@ dependencies {
 
     compile files('libs/OnBarcode.AndroidBarcode.jar')
 
+    //compile 'org.simpleframework:simple-xml:2.7.1'
 }

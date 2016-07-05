@@ -18,7 +18,7 @@ import com.mytcc.appuser.ModoPassageiro.Fragments.MainFragment;
 import com.mytcc.appuser.ModoPassageiro.Fragments.MyAccountFragment;
 import com.mytcc.appuser.ModoPassageiro.Fragments.MyTicketsFragment;
 import com.mytcc.appuser.ModoPassageiro.Fragments.NewTicketFragment;
-import com.mytcc.appuser.ModoPassageiro.Fragments.SettingsFragment;
+import com.mytcc.appuser.ModoPassageiro.Fragments.RegistroOcorrenciaFragment;
 import com.mytcc.appuser.ModoPassageiro.Fragments.TicketConfirmationFragment;
 import com.mytcc.appuser.ModoPassageiro.Fragments.TicketFragment;
 import com.mytcc.appuser.MyApplication;
@@ -66,26 +66,28 @@ public class MainPassageioActivity extends ActionBarActivity
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
         // populate the navigation drawer
-        mNavigationDrawerFragment.setUserData(myApp.getMyUser().getNome(), myApp.getMyUser().getEmail() /*, BitmapFactory.decodeResource(getResources(), R.drawable.avatar)*/);
+        String user = myApp.getMyUser().getNome();
+        String email = myApp.getMyUser().getEmail();
+        mNavigationDrawerFragment.setUserData(user, email /*, BitmapFactory.decodeResource(getResources(), R.drawable.avatar)*/);
     }
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         switch (position) {
-            case 0: //menu_home//todo
+            case 0: //menu_home
                 switchFragments(MainFragment.TAG);
                 break;
-            case 1: //menu_myaccount//todo
+            case 1: //menu_myaccount
                 switchFragments(MyAccountFragment.TAG);
                 break;
-            case 2: //menu_myticket//todo
+            case 2: //menu_myticket
                 switchFragments(MyTicketsFragment.TAG);
                 break;
-            case 3: //menu_newticket //todo
+            case 3: //menu_newticket
                 switchFragments(NewTicketFragment.TAG);
                 break;
-            case 4: //menu_settings //todo
-                switchFragments(SettingsFragment.TAG);
+            case 4: //menu_registro
+                switchFragments(RegistroOcorrenciaFragment.TAG);
                 break;
         }
     }
@@ -154,9 +156,6 @@ public class MainPassageioActivity extends ActionBarActivity
                 case NewTicketFragment.TAG:
                     fragment = new NewTicketFragment();
                     break;
-                case SettingsFragment.TAG:
-                    fragment = new SettingsFragment();
-                    break;
                 case ChooseTicketFragment.TAG:
                     fragment = new ChooseTicketFragment();
                     break;
@@ -165,6 +164,9 @@ public class MainPassageioActivity extends ActionBarActivity
                     break;
                 case TicketFragment.TAG:
                     fragment = new TicketFragment();
+                    break;
+                case RegistroOcorrenciaFragment.TAG:
+                    fragment = new RegistroOcorrenciaFragment();
                     break;
             }
         }

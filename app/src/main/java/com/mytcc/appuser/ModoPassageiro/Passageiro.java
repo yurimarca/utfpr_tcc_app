@@ -2,12 +2,11 @@ package com.mytcc.appuser.ModoPassageiro;
 
 import android.util.Log;
 
-import com.mytcc.appuser.Usuario;
 import com.parse.ParseUser;
 
 import java.util.ArrayList;
 
-public class Passageiro extends Usuario{
+public class Passageiro {
 
     public static final String TAG = "Passageiro" ;
 
@@ -95,5 +94,53 @@ public class Passageiro extends Usuario{
 
     public void setTickets(ArrayList<Passagem> tickets) {
         this.tickets = tickets;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getData_nascimento() {
+        return data_nascimento;
+    }
+
+    public void setData_nascimento(String data_nascimento) {
+        this.data_nascimento = data_nascimento;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 }

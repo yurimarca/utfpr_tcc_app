@@ -3,11 +3,11 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivityFragment">
+    android:paddingBottom="@dimen/activity_vertical_margin">
 
     <TextView
-        android:id="@+id/listapassageiros_text_title"
-        android:text="Lista de Passageiros"
+        android:id="@+id/registroocorrencia_textview_title"
+        android:text="@string/registroocorrencia_textview_title"
         android:textColor="@color/myPrimaryColor"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
     <View
         android:layout_height="2dip"
         android:background="@color/myPrimaryColor"
-        android:layout_below="@+id/listapassageiros_text_title"
+        android:layout_below="@+id/registroocorrencia_textview_title"
         android:layout_width="wrap_content"
         android:id="@+id/view1" />
 
@@ -24,25 +24,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/view1"
-        android:id="@+id/listView_listapassageiros"
+        android:id="@+id/lvRegistros"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/btnIniciarViagem"/>
+        android:layout_above="@+id/btnEnviar"/>
 
     <com.gc.materialdesign.views.ButtonRectangle
-        android:id="@+id/btnIniciarViagem"
+        android:id="@+id/btnEnviar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/myPrimaryColor"
-        android:text="Iniciar Viagem"
-        android:layout_above="@+id/btnRetornar"/>
-
-    <com.gc.materialdesign.views.ButtonFlat
-        android:id="@+id/btnRetornar"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:background="@color/myPrimaryColor"
-        android:text="Retornar Embarque"/>
+        android:text="@string/registroocorrencia_button_enviar"/>
 
 </RelativeLayout>
